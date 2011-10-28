@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+<script>
+
+
+	function startGame(){
+		var song = document.getElementById('songAudio');
+		song.play();
+		
+		var timeForSong=Math.floor(Math.random()*90000);
+		if (timeForSong < 20000) timeForSong = 20000;
+		setTimeout("pauseGame()",timeForSong);
+	}
+
+	function pauseGame(){
+		var song = document.getElementById('songAudio');
+		song.pause();
+		
+		setTimeout("startGame()",30000);
+	}
+
+</script>
+
+</head>
+<body>
+
+<h1>Video</h1>
+
+<p><button type="button" onclick="startGame()">Start the Game!</button></p>
+
+<audio id="songAudio" src="C:\Users\Public\Music\Sample%20Music\Kalimba.mp3" controls loop="true" preload="auto"/>
+
+</body>
+
+</html>
