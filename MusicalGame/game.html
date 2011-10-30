@@ -9,8 +9,7 @@
 		var song = document.getElementById('songAudio');
 		song.play();
 		
-		var timeForSong=Math.floor(Math.random()*90000);
-		if (timeForSong < 20000) timeForSong = 20000;
+		var timeForSong=Math.floor(Math.random()*70000)+20000;
 		setTimeout("pauseGame()",timeForSong);
 	}
 
