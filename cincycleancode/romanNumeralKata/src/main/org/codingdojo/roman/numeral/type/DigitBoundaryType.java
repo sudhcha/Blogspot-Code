@@ -3,7 +3,15 @@ package org.codingdojo.roman.numeral.type;
 public enum DigitBoundaryType {
 	
 	NULL( -1, "", null), ONE(1, "I", NULL), FIVE(5, "V", ONE),
-	TEN(10, "X", FIVE), FIFTY(50, "L", TEN), HUNDRED(100, "C", FIFTY);
+	TEN(10, "X", FIVE), FIFTY(50, "L", TEN), HUNDRED(100, "C", FIFTY),
+	FIVEHUNDRED(500, "D", HUNDRED), THOUSAND(1000, "M", FIVEHUNDRED){
+
+		@Override
+		protected boolean isNextAvailable() {
+			return false;
+		}
+		
+	};
 	
 	
 	
@@ -25,6 +33,10 @@ public enum DigitBoundaryType {
 	public DigitBoundaryType getPreviousType(){
 		return previousType;
 	}
+	
+	protected boolean isNextAvailable(){
+		return true;
+	}
 
 	private DigitBoundaryType(int value, String symbol, DigitBoundaryType previousType) {
 		this.symbol = symbol;
@@ -34,7 +46,7 @@ public enum DigitBoundaryType {
 	
 	public static DigitBoundaryType findType(int n){
 		for (DigitBoundaryType type : values()){
-			if (n <=type.value){
+			if (n <=type.value || !type.isNextAvailable()){
 				return type;
 			}
 		}

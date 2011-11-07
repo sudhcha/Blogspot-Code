@@ -28,7 +28,7 @@ public class DigitToNumeralConverterTest {
                             { 14, "XIV" }, { 15, "XV" }, { 16, "XVI" },
                             { 17, "XVII" }, { 18, "XVIII" }, { 19, "XIX" }, { 20, "XX" },
                             { 30, "XXX" }, { 40, "XL" },
-                            { 80, "LXXX" }, { 90, "XC" }});
+                            { 80, "LXXX" }, { 90, "XC" }, {900, "CM"}, {990, "CMXC"}, {1990, "MCMXC"}});
     }
 
 
@@ -43,7 +43,7 @@ public class DigitToNumeralConverterTest {
 
 
 	@Test
-	public void testToNumeral() {
+	public void testToNumeral() throws Exception {
 		assertEquals(output, testInstance.toNumeral(input));
 	}
 
