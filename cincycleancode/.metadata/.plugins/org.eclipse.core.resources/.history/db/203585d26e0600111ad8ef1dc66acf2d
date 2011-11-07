@@ -1,0 +1,12 @@
+package org.codingdojo.roman.numeral.converter;
+
+import org.codingdojo.roman.numeral.type.Digit;
+import org.codingdojo.roman.numeral.type.Numeral;
+
+public class Converter implements Convertable<Digit, Numeral> {
+	
+	public Numeral toNumeral(Digit digit){
+		return null;
+	}
+
+}

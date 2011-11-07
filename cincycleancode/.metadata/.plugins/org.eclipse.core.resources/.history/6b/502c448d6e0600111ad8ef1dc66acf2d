@@ -1,0 +1,14 @@
+package org.codingdojo.roman.numeral.converter;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ConverterTest {
+
+	@Test
+	public void testToNumeral() {
+		fail("Not yet implemented");
+	}
+
+}

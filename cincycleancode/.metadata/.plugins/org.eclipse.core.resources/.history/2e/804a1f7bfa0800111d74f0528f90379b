@@ -1,0 +1,45 @@
+package org.codingdojo.roman.numeral.converter;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
+public class DigitToNumeralConverterTest {
+	
+	private Integer input;
+	
+	private  String output;
+	
+	@Parameters
+    public static Collection<Object[]> data() {
+            return Arrays.asList(new Object[][] {
+                            
+                            { 1, "I" }, { 2, "II" } , { 3, "III" },
+                            { 4, "IV" }, { 5, "V" }, { 6, "VI" },
+                            { 7, "VI" }, { 8, "VI" }, { 9, "VI" }, { 10, "VI" }});
+    }
+
+
+	public DigitToNumeralConverterTest(Integer input, String output) {
+		super();
+		this.input = input;
+		this.output = output;
+	}
+
+
+	private Converter testInstance = new Converter();
+
+
+	@Test
+	public void testToNumeral() {
+		assertEquals(output, testInstance.toNumeral(input));
+	}
+
+}

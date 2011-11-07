@@ -1,0 +1,24 @@
+package org.codingdojo.roman.numeral.converter;
+
+import org.codingdojo.roman.numeral.type.DigitBoundaryType;
+
+public class Converter implements Convertable<Integer, String> {
+
+	public String toNumeral(Integer digit) {
+		StringBuilder numeral = new StringBuilder();
+		DigitBoundaryType type = DigitBoundaryType.findType(digit);
+		int value = type.getValue();
+		int previousValue = type.getPreviousType().getValue();
+		int diffWithCurrent = value - digit;
+		int diffWithPrevious = digit - previousValue;
+		
+		if (diffWithCurrent < diffWithPrevious){
+			for (int i=0; i < diffWithCurrent; i++){
+				numeral.append(type.getPreviousType().getSymbol());
+			}
+		}
+		numeral.append(type.getValue());
+		return numeral.toString();
+	}
+
+}

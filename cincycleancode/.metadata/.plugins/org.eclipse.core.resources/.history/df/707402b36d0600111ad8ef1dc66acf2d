@@ -1,0 +1,5 @@
+package org.codingdojo.roman.numeral.converter;
+
+public interface Convertable {
+
+}

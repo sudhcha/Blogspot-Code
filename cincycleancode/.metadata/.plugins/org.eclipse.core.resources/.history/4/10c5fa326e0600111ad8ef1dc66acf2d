@@ -1,0 +1,7 @@
+package org.codingdojo.roman.numeral.type;
+
+public class Numeral {
+	
+	private String symbol;
+
+}

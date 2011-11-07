@@ -1,0 +1,20 @@
+package org.codingdojo.roman.numeral.converter;
+
+import org.codingdojo.roman.numeral.type.DigitBoundaryType;
+
+
+public class Converter implements Convertable<Integer, String> {
+	
+	public String toNumeral(Integer digit){
+		StringBuilder numeral = new StringBuilder();
+		DigitBoundaryType type = DigitBoundaryType.findType(digit);
+		if (type.isMinimum(digit)){
+			numeral.append(type.getPreviousSymbol());
+		}
+		for (int i = 0; i < digit-type.getMinLimit(); i++){
+			numeral.append(type.getSymbol());
+		}
+		return numeral.toString();
+	}
+
+}

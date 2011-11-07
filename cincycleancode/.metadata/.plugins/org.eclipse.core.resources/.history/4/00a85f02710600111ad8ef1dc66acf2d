@@ -1,0 +1,14 @@
+package org.codingdojo.roman.numeral.converter;
+
+
+public class Converter implements Convertable<Integer, String> {
+	
+	public String toNumeral(Integer digit){
+		StringBuilder numeral = new StringBuilder();
+		for (int i = 0; i < digit; i++){
+			numeral.append("I");
+		}
+		return numeral.toString();
+	}
+
+}

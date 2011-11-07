@@ -1,0 +1,27 @@
+package org.codingdojo.roman.numeral.type;
+
+public enum DigitBoundaryType {
+	
+	AYE(1, 3, "I"), VEE(4, 8, "V");
+	
+	private final int minLimit;
+	
+	private final int maxLimit;
+	
+	private final String symbol;
+
+	private DigitBoundaryType(int minLimit, int maxLimit, String symbol) {
+		this.minLimit = minLimit;
+		this.maxLimit = maxLimit;
+		this.symbol = symbol;
+	}
+	
+	public static DigitBoundaryType getType(int n){
+		for (DigitBoundaryType type : values()){
+			
+		}
+		throw new IllegalArgumentException("The Romans weren't that clever to find: "+n);
+	}
+	
+
+}
