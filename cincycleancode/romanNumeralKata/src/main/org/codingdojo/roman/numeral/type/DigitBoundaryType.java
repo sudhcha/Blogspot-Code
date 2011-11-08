@@ -4,7 +4,8 @@ public enum DigitBoundaryType {
 	
 	NULL( -1, "", null), ONE(1, "I", NULL), FIVE(5, "V", ONE),
 	TEN(10, "X", FIVE), FIFTY(50, "L", TEN), HUNDRED(100, "C", FIFTY),
-	FIVEHUNDRED(500, "D", HUNDRED), THOUSAND(1000, "M", FIVEHUNDRED){
+	FIVEHUNDRED(500, "D", HUNDRED), THOUSAND(1000, "M", FIVEHUNDRED),
+	INFINITY(Integer.MAX_VALUE, "", THOUSAND){
 
 		@Override
 		protected boolean isNextAvailable() {
