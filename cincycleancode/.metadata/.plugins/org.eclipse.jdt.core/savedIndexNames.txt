@@ -24,7 +24,6 @@ INDEX VERSION 1.126+/Users/sudhin/Blogspot-Code/cincycleancode/.metadata/.plugin
 3954040986.index
 3302703152.index
 84777399.index
-2006778774.index
 2545238116.index
 3000285004.index
 2744859268.index
