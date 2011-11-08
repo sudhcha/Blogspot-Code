@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="DigitToNumeralConverterTest" project="romanNumeralKata" tests="27" started="27" failures="4" errors="1" ignored="0">
+  <testsuite name="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.004">
+    <testsuite name="[0]" time="0.0">
+      <testcase name="testToNumeral[0]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[1]" time="0.0">
+      <testcase name="testToNumeral[1]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[2]" time="0.0">
+      <testcase name="testToNumeral[2]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[3]" time="0.0">
+      <testcase name="testToNumeral[3]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[4]" time="0.0">
+      <testcase name="testToNumeral[4]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[5]" time="0.0">
+      <testcase name="testToNumeral[5]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[6]" time="0.0">
+      <testcase name="testToNumeral[6]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[7]" time="0.0">
+      <testcase name="testToNumeral[7]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0">
+        <failure>
+          <expected>VIII</expected>
+          <actual>IIX</actual>org.junit.ComparisonFailure: expected:&lt;[VIII]&gt; but was:&lt;[IIX]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest.testToNumeral(DigitToNumeralConverterTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="[8]" time="0.0">
+      <testcase name="testToNumeral[8]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[9]" time="0.0">
+      <testcase name="testToNumeral[9]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[10]" time="0.0">
+      <testcase name="testToNumeral[10]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[11]" time="0.0">
+      <testcase name="testToNumeral[11]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[12]" time="0.0">
+      <testcase name="testToNumeral[12]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[13]" time="0.0">
+      <testcase name="testToNumeral[13]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[14]" time="0.0">
+      <testcase name="testToNumeral[14]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[15]" time="0.0">
+      <testcase name="testToNumeral[15]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[16]" time="0.0">
+      <testcase name="testToNumeral[16]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[17]" time="0.0">
+      <testcase name="testToNumeral[17]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0">
+        <failure>
+          <expected>XVIII</expected>
+          <actual>XIIX</actual>org.junit.ComparisonFailure: expected:&lt;X[VIII]&gt; but was:&lt;X[IIX]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest.testToNumeral(DigitToNumeralConverterTest.java:47)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="[18]" time="0.0">
+      <testcase name="testToNumeral[18]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[19]" time="0.0">
+      <testcase name="testToNumeral[19]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[20]" time="0.0">
+      <testcase name="testToNumeral[20]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[21]" time="0.0">
+      <testcase name="testToNumeral[21]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[22]" time="0.0">
+      <testcase name="testToNumeral[22]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0">
+        <failure>
+          <expected>LXXX</expected>
+          <actual>XXC</actual>org.junit.ComparisonFailure: expected:&lt;[LXXX]&gt; but was:&lt;[XXC]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest.testToNumeral(DigitToNumeralConverterTest.java:47)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="[23]" time="0.0">
+      <testcase name="testToNumeral[23]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[24]" time="0.0">
+      <testcase name="testToNumeral[24]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="[25]" time="0.001">
+      <testcase name="testToNumeral[25]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.001">
+        <failure>
+          <expected>CMXC</expected>
+          <actual>XM</actual>org.junit.ComparisonFailure: expected:&lt;[CMXC]&gt; but was:&lt;[XM]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest.testToNumeral(DigitToNumeralConverterTest.java:47)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="[26]" time="0.0">
+      <testcase name="testToNumeral[26]" classname="org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest" time="0.0">
+        <error>java.lang.NullPointerException
+	at org.codingdojo.roman.numeral.converter.Converter.toNumeral(Converter.java:12)
+	at org.codingdojo.roman.numeral.converter.Converter.toNumeral(Converter.java:23)
+	at org.codingdojo.roman.numeral.converter.DigitToNumeralConverterTest.testToNumeral(DigitToNumeralConverterTest.java:47)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:49)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
