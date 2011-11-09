@@ -1,5 +1,0 @@
-package org.codingdojo.roman.numeral.converter;
-
-public class Converter implements Convertable<S, T> {
-
-}
