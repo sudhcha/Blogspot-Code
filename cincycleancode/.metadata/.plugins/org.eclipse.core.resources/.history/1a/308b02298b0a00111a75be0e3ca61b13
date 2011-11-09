@@ -20,7 +20,7 @@ public class Converter {
 		int reminder = input % limit;
 		DigitBoundaryType limitType = DigitBoundaryType.findType(limit);
 		for (int i = 0; i < firstValue; i++) {
-			numeral.append(limitType);
+			numeral.append(limitType.getSymbol());
 		}
 		numeral.append(appendRecursiveValue(reminder, limitType));
 		return numeral.toString();

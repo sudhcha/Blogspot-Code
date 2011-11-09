@@ -9,7 +9,7 @@ public class Converter {
 			throw new IllegalArgumentException("Sorry, we can calculate only upto 3000");
 		}
 		StringBuilder numeral = new StringBuilder();
-		numeral.append(toNumeral(input, DigitBoundaryType.M.getValue()));
+		numeral.append(toNumeral(input, DigitBoundaryType.THOUSAND.getValue()));
 
 		return numeral.toString();
 	}
@@ -20,7 +20,7 @@ public class Converter {
 		int reminder = input % limit;
 		DigitBoundaryType limitType = DigitBoundaryType.findType(limit);
 		for (int i = 0; i < firstValue; i++) {
-			numeral.append(limitType);
+			numeral.append(limitType.getSymbol());
 		}
 		numeral.append(appendRecursiveValue(reminder, limitType));
 		return numeral.toString();

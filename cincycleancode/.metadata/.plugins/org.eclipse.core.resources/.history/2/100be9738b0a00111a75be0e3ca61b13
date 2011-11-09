@@ -2,8 +2,7 @@ package org.codingdojo.roman.numeral.type;
 
 public enum DigitBoundaryType {
 
-	NULL(-1, -1, null), I(1, 0, NULL), V(5, 1, I), X(10, 5, I), L(50, 10, X), C(100, 50, X), D(500, 100, C), 
-	M(1000, 500, C);
+	NULL(-1, -1, null), I(1, 0, NULL), V(5, 1, I), X(10, 5, I), L(50, 10, X), C(100, 50, X), D(500, 100, C), M(1000, 500, C);
 
 	private final int value;
 
