@@ -1,0 +1,32 @@
+package org.codingdojo.roman.numeral.converter;
+
+
+public class Converter {
+
+	public String toNumeral(Integer input) {
+		if (input > 3000){
+			throw new IllegalArgumentException("Sorry, Romans ain't that clever!");
+		}
+		StringBuilder numeral = new StringBuilder();
+		numeral.append(getNumeral(input, 1000));
+		
+		return numeral.toString();
+	}
+
+	private String getNumeral(Integer input, int limit) {
+		StringBuilder numeral = new StringBuilder();
+		int firstValue = input/limit;
+		int reminder = input%limit;
+		for (int i = 0; i < firstValue; i++){
+			numeral.append("M");
+		}
+		int difference = limit - reminder;
+		if (difference == 100){
+			numeral.append("CM");
+		} else {
+			
+		}
+		return numeral.toString();
+	}
+
+}

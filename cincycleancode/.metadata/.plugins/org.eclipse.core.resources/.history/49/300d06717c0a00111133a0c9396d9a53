@@ -1,0 +1,25 @@
+package org.codingdojo.roman.numeral.converter;
+
+
+public class Converter {
+
+	public String toNumeral(Integer input) throws Exception {
+		StringBuilder numeral = new StringBuilder();
+		getNumeral(input, numeral, 1000);
+		
+		return numeral.toString();
+	}
+
+	private void getNumeral(Integer input, StringBuilder numeral, int limit) {
+		int firstValue = input/limit;
+		int reminder = input%limit;
+		for (int i = 0; i < firstValue; i++){
+			numeral.append("M");
+		}
+		int difference = limit - reminder;
+		if (difference == 100){
+			numeral.append("CM");
+		}
+	}
+
+}

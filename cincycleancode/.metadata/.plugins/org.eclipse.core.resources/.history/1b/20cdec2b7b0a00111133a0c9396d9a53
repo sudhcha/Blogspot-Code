@@ -1,0 +1,13 @@
+package org.codingdojo.roman.numeral.converter;
+
+
+public class Converter {
+
+	public String toNumeral(Integer digit) throws Exception {
+		StringBuilder numeral = new StringBuilder();
+		
+		
+		return numeral.toString();
+	}
+
+}

@@ -4,33 +4,40 @@ import org.codingdojo.roman.numeral.type.DigitBoundaryType;
 
 public class Converter {
 
-	public String toNumeral(Integer digit) throws Exception {
-		StringBuilder numeral = new StringBuilder();;
-		try {
-			DigitBoundaryType type = DigitBoundaryType.findType(digit);
-			int value = type.getValue();
-			int previousValue = type.getPreviousType().getValue();
-			int diffWithCurrent = value - digit;
-			int diffWithPrevious = digit - previousValue;
-			if (diffWithCurrent == 0){
-				return numeral.append(type.getSymbol()).toString();
-			}
-			if (diffWithPrevious == 0){
-				return numeral.append(type.getPreviousType().getSymbol()).toString();
-			}
-			
-			if (diffWithCurrent < diffWithPrevious){
-				numeral.append(toNumeral(diffWithCurrent));
-				numeral.append(type.getSymbol());
-			} else {
-				numeral.append(type.getPreviousType().getSymbol());
-				numeral.append(toNumeral(diffWithPrevious));
-			}
-		} catch (Exception e) {
-			System.err.println("Error finding value for: "+digit);
-			throw e;
+	public String toNumeral(Integer input) {
+		if (input > 3000) {
+			throw new IllegalArgumentException("Sorry, we can calculate only upto 3000");
 		}
-		
+		StringBuilder numeral = new StringBuilder();
+		numeral.append(toNumeral(input, DigitBoundaryType.THOUSAND.getValue()));
+
+		return numeral.toString();
+	}
+
+	private String toNumeral(Integer input, int limit) {
+		StringBuilder numeral = new StringBuilder();
+		int firstValue = input / limit;
+		int reminder = input % limit;
+		DigitBoundaryType limitType = DigitBoundaryType.findType(limit);
+		for (int i = 0; i < firstValue; i++) {
+			numeral.append(limitType.getSymbol());
+		}
+		numeral.append(appendRecursiveValue(reminder, limitType));
+		return numeral.toString();
+	}
+
+	private String appendRecursiveValue(int reminder, DigitBoundaryType limitType) {
+		StringBuilder numeral = new StringBuilder();
+		int limit = limitType.getValue();
+		int difference = limit - reminder;
+		if (difference <= limitType.getAllowedCurrentDifference()) {
+			numeral.append(limitType.getAllowedSubtractType().getSymbol());
+			numeral.append(limitType.getSymbol());
+			numeral.append(toNumeral(reminder - (limit - limitType.getAllowedCurrentDifference()),
+					limitType.getPreviousValue()));
+		} else if (reminder > 0) {
+			numeral.append(toNumeral(reminder, limitType.getPreviousValue()));
+		}
 		return numeral.toString();
 	}
 

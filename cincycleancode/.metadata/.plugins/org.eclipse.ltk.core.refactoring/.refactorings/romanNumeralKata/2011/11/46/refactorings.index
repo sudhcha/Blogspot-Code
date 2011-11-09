@@ -1,1 +1,6 @@
 1320640851860	Delete element
+1320806395868	Extract method 'getNumeral'
+1320806427648	Extract local variable 'limit'
+1320807604940	Rename method 'getNumeral'
+1320809534247	Rename field 'previousType'
+1320809966980	Extract method 'appendRecursiveValue'
