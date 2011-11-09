@@ -32,7 +32,8 @@ public class Converter {
 		int difference = limit - reminder;
 		int nextValue = reminder;
 		if (difference <= limitType.getAllowedCurrentDifference()) {
-			numeral.append(limitType.getPreviousAndThisSymbol());
+			numeral.append(limitType.getAllowedSubtractType().getSymbol());
+			numeral.append(limitType.getSymbol());
 			nextValue = reminder - (limit - limitType.getAllowedCurrentDifference());
 		}
 		if (reminder > 0) {

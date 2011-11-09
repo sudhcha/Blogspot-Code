@@ -4,3 +4,4 @@
 1320807604940	Rename method 'getNumeral'
 1320809534247	Rename field 'previousType'
 1320809966980	Extract method 'appendRecursiveValue'
+1320810978704	Extract local variable 'nextValue'

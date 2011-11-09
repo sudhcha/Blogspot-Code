@@ -30,13 +30,14 @@ public class Converter {
 		StringBuilder numeral = new StringBuilder();
 		int limit = limitType.getValue();
 		int difference = limit - reminder;
-		int nextValue = reminder;
 		if (difference <= limitType.getAllowedCurrentDifference()) {
-			numeral.append(limitType.getPreviousAndThisSymbol());
-			nextValue = reminder - (limit - limitType.getAllowedCurrentDifference());
-		}
-		if (reminder > 0) {
-			numeral.append(toNumeral(nextValue, limitType.getPreviousValue()));
+			numeral.append(limitType.getAllowedSubtractType().getSymbol());
+			numeral.append(limitType.getSymbol());
+			int nextValue = reminder - (limit - limitType.getAllowedCurrentDifference());
+			numeral.append(toNumeral(nextValue,
+					limitType.getPreviousValue()));
+		} else if (reminder > 0) {
+			numeral.append(toNumeral(reminder, limitType.getPreviousValue()));
 		}
 		return numeral.toString();
 	}

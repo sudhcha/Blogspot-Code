@@ -54,9 +54,5 @@ public enum DigitBoundaryType {
 		return previousValue;
 	}
 	
-	public String getPreviousAndThisSymbol(){
-		return getAllowedSubtractType().getSymbol()+getSymbol();
-	}
-	
 
 }
