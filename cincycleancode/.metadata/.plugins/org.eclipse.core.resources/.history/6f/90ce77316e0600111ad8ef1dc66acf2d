@@ -1,7 +1,0 @@
-package org.codingdojo.roman.numeral.type;
-
-public class Digit {
-	
-	private int value;
-
-}
